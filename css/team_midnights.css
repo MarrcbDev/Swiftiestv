@@ -1,0 +1,119 @@
+/* Midnights (Dark Theme) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+body {
+    background-color: #0A0F24;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #D0D6E0;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E2A4A;
+    padding: 10px 20px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+}
+
+header select,
+header a {
+    background-color: #39415B;
+    color: #D0D6E0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header select:hover,
+header a:hover {
+    background-color: #4E5670;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #131A2E;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #D0D6E0;
+    margin-bottom: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1E2A4A;
+    color: #D0D6E0;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr {
+    background-color: #2F3955;
+    color: #D0D6E0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #39415B;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #4E5670;
+    color: #FFF;
+}
+
+/* INPUT */
+input[type="number"] {
+    background-color: #D0D6E0;
+    color: #0A0F24;
+    border: 1px solid #39415B;
+    border-radius: 5px;
+    width: 70px;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* BOTONES */
+button {
+    background-color: #39415B;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+button:hover {
+    background-color: #2A3146;
+}

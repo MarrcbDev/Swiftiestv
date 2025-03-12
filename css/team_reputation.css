@@ -1,0 +1,123 @@
+/* Reputation (Dark Theme) */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+body {
+    background-color: #121212;
+    font-family: "Cinzel", serif;
+    color: #EEE;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    padding: 10px 20px;
+}
+
+header h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header select,
+header a {
+    background-color: #333;
+    color: #EEE;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header select:hover,
+header a:hover {
+    background-color: #555;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2A2A2A;
+    color: #EEE;
+}
+
+thead th {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    background-color: #1F1F1F;
+    color: #EEE;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #555;
+    color: #FFF;
+}
+
+/* INPUT */
+input[type="number"] {
+    background-color: #333;
+    color: #EEE;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 70px;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* BOTONES */
+button {
+    background-color: #555;
+    color: #EEE;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 2px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #777;
+}

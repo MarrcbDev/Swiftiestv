@@ -1,0 +1,119 @@
+/* Red (Dark Theme) */
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+body {
+    background-color: #2E1A1A;
+    font-family: "League Gothic", sans-serif;
+    color: #EDEDED;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B31024;
+    padding: 10px 20px;
+}
+
+header h2 {
+    font-size: 1.6rem;
+}
+
+header select,
+header a {
+    background-color: #4C3228;
+    color: #EDEDED;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header select:hover,
+header a:hover {
+    background-color: #8B2A3A;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #3F2223;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #FFF4EB;
+    margin-bottom: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #B31024;
+    color: #FFF;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr {
+    background-color: #4C3228;
+    color: #EDEDED;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2E1A1A;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #8B2A3A;
+    color: #FFF;
+}
+
+/* INPUT */
+input[type="number"] {
+    background-color: #EDEDED;
+    color: #3F2223;
+    border: 1px solid #B31024;
+    border-radius: 5px;
+    width: 70px;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* BOTONES */
+button {
+    background-color: #8B2A3A;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+button:hover {
+    background-color: #4C3228;
+}

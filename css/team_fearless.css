@@ -1,0 +1,119 @@
+/* Fearless (Dark Theme) */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+body {
+    background-color: #1A1A10;
+    font-family: "Playfair Display", serif;
+    color: #EDEBD4;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B0902F;
+    padding: 10px 20px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+}
+
+header select,
+header a {
+    background-color: #6F5F1E;
+    color: #EDEBD4;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header select:hover,
+header a:hover {
+    background-color: #B0902F;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #2E2C1F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #F3E0AB;
+    margin-bottom: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #B0902F;
+    color: #FFF;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr {
+    background-color: #6F5F1E;
+    color: #F3E0AB;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #4D4016;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #B0902F;
+    color: #FFF;
+}
+
+/* INPUT */
+input[type="number"] {
+    background-color: #F3E0AB;
+    color: #4D4016;
+    border: 1px solid #B0902F;
+    border-radius: 5px;
+    width: 70px;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* BOTONES */
+button {
+    background-color: #B0902F;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+button:hover {
+    background-color: #6F5F1E;
+}
