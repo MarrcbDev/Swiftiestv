@@ -9,6 +9,31 @@ body {
     padding: 0;
 }
 
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+    overflow-x: auto; /* Evita que el contenido sobresalga del viewport */
+}
+
+nav a {
+    flex: 1; /* Distribuye el espacio equitativamente */
+    text-align: center;
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    min-width: 100px; /* Evita que los links sean demasiado pequeños */
+    white-space: nowrap; /* Evita saltos de línea no deseados */
+}
+
+nav a:first-child {
+    border-right: 2px solid #c4c4c4;
+}
+
 /* HEADER */
 header {
     display: flex;

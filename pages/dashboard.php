@@ -97,32 +97,16 @@ if (!$result) {
 </head>
 <body>
 
-    <header>
-        <h2><?php echo htmlspecialchars($username) . $adminTag; ?></h2>
-        <select id="themeSelector" style="padding: 5px; outline: none; background-color:rgba(255, 255, 255, 0.16); border: none; text-align: center;">
-            <option value="default.css" disabled selected>Tema</option>
-            <option value="team_debut.css">Debut</option>
-            <option value="team_fearless.css">Fearless</option>
-            <option value="team_speaknow.css">Speak Now</option>
-            <option value="team_red.css">Red</option>
-            <option value="team_1989.css">1989</option>
-            <option value="team_reputation.css">Reputation</option>
-            <option value="team_lover.css">Lover</option>
-            <option value="team_folklore.css">Folklore</option>
-            <option value="team_evermore.css">Evermore</option>
-            <option value="team_midnights.css">Midnights</option>
-            <option value="team_ttpd.css">TTPD</option>
-        </select>
+  <?php include ("header.php") ?>
 
 
-
-        <a href="logout.php">Cerrar Sesión</a>
-    </header>
 
     <div class="container">
         <h2>Puntos de los Teams</h2>
 
-
+        <?php if (isset($_GET["ranking_generado"])) { ?>
+    <p style="color: green; text-align: center; margin: 10px;">Ranking generado correctamente y puntos reiniciados.</p>
+<?php } ?>
         <div>
             <table>
                 <thead>
@@ -159,6 +143,14 @@ if (!$result) {
                 </tbody>
             </table>
         </div>
+        <?php if ($isAdminGeneral) { ?>
+    <form action="../php/generar_ranking.php" method="POST">
+        <button style="margin-top: 20px; padding: 10px;" type="submit" onclick="return confirm('¿Estás seguro de generar el ranking? Esta acción reiniciará los puntos.');">
+            Generar Ranking y Reiniciar Puntos
+        </button>
+    </form>
+<?php } ?>
+
     </div>
 
 </body>
