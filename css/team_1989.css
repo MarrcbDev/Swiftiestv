@@ -19,7 +19,7 @@ header {
 }
 
 header h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 header select,
@@ -76,6 +76,7 @@ thead th {
 tbody tr {
     background-color: #162A3A;
     color: #EEEEEE;
+    border: 1px solid #000;
 }
 
 tbody tr:nth-child(even) {
@@ -91,13 +92,14 @@ tbody tr:hover {
     color: #FFF;
 }
 
+
 /* INPUT */
 input[type="number"] {
     background-color: #EEEEEE;
     color: #101A2B;
     border: 1px solid #1E3A59;
     border-radius: 5px;
-    width: 70px;
+    width: 75px;
     padding: 3px;
     margin-right: 5px;
     text-align: center;
@@ -108,10 +110,8 @@ button {
     background-color: #31516B;
     color: #FFF;
     border: none;
-    border-radius: 20px;
     padding: 5px 10px;
     cursor: pointer;
-    margin: 0 2px;
 }
 
 button:hover {

@@ -59,6 +59,9 @@ if (!$result) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
 
+    <!-- Icono -->
+     <?php Include ("icon.php") ?>
+
     <!-- Carga de tema dinámico desde LocalStorage -->
     <link id="themeStylesheet" rel="stylesheet" href="../css/default.css">
 
@@ -140,9 +143,14 @@ if (!$result) {
                                 <td>
                                     <form action="../php/update_points.php" method="POST">
                                         <input type="hidden" name="team" value="<?php echo htmlspecialchars($row["team"]); ?>">
+
                                         <input type="number" name="points" max="99999999" min="1" required placeholder="Puntos">
+                                        </div>
+                                        <div>
                                         <button type="submit" name="action" value="add">➕</button>
                                         <button type="submit" name="action" value="subtract">➖</button>
+                                        </div>
+                                        </div>
                                     </form>
                                 </td>
                             <?php } ?>

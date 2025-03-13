@@ -11,6 +11,8 @@ if (isset($_SESSION["username"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicia - Swifties TV</title>
+        <!-- Icono -->
+        <?php Include ("icon.php") ?>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
